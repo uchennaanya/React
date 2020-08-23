@@ -184,5 +184,3 @@ export const DISHES =
         ]
         }
     ];
-
-    export default DISHES

@@ -18,14 +18,14 @@ class Menu extends React.Component {
    renderDish(dish) {
        if (dish != null) {
          return(
-           <div className="col-12 col-md-12">
+           <div className="col-12 col-md-10 m-2">
              <Card key={dish.id}>
                  <CardImg top src={dish.image} alt={dish.name} />
-                 <CardBody>
-                   <CardTitle>{dish.name}</CardTitle>
-                   <CardText>{dish.description}</CardText>
-                 </CardBody>
-             </Card>
+                   <CardBody>
+                     <CardTitle>{dish.name}</CardTitle>
+                     <CardText>{dish.description}</CardText>
+                   </CardBody>
+               </Card>
              </div>
          );
        } else {
@@ -38,7 +38,7 @@ class Menu extends React.Component {
    render() {
        const menu = this.props.dishes.map((dish) => {
            return (
-             <div  className="col-12 col-md-4">
+             <div  className="col-12 col-md-4 mt-5">
                <Card key={dish.id}
                  onClick={() => this.onDishSelect(dish)}>
                  <CardImg width="100%" src={dish.image} alt={dish.name} />
