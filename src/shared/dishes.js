@@ -2,6 +2,7 @@ export const DISHES =
     [
         {
         id: 0,
+        show:false,
         name:'Uthappizza',
         image: 'assets/images/uthappizza.png',
         category: 'mains',
@@ -47,6 +48,7 @@ export const DISHES =
         ]                        },
         {
         id: 1,
+        show:false,
         name:'Zucchipakoda',
         image: 'assets/images/zucchipakoda.png',
         category: 'appetizer',
@@ -93,6 +95,7 @@ export const DISHES =
         },
         {
         id: 2,
+        show:false,
         name:'Vadonut',
         image: 'assets/images/vadonut.png',
         category: 'appetizer',
@@ -139,6 +142,7 @@ export const DISHES =
         },
         {
         id: 3,
+        show:false,
         name:'ElaiCheese Cake',
         image: 'assets/images/elaicheesecake.png',
         category: 'dessert',
