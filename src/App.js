@@ -14,6 +14,16 @@ class App extends React.Component {
         dishes: DISHES
       };
     }
+
+    handleClick =(id)=>{
+     const newData=this.state.dishes.map(dish=>{
+       if(dish.id === id){
+         dish.show =!dish.show
+       }
+       return dish
+     })
+     this.setState({dish:[...this.state.dishes, {newData}]})
+   }
 render() {
   return (
     <div>
@@ -22,7 +32,7 @@ render() {
           <NavbarBrand href="/">Con Fusion </NavbarBrand>
         </div>
       </Navbar>
-      <Menu dishes={this.state.dishes} />
+      <Menu dishes={this.state.dishes} click={this.handleClick} />
     </div>
   );
 }
